@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="column" id="yesterdayColumn">
+            <h2>Yesterday</h2>
+            <div class="date" id="yesterdayDate"></div>
+            <div class="input-container">
+                <input type="text" id="yesterdayTaskInput" placeholder="Enter a new task...">
+                <button id="addYesterdayTaskBtn">+</button>
+            </div>
+            <ul id="yesterdayTaskList"></ul>
+            <div class="stats">
+                <p>Total Tasks: <span id="totalYesterdayTasks">0</span></p>
+                <p>Completed Tasks: <span id="completedYesterdayTasks">0</span></p>
+                <p><strong>Completion Rate:</strong> <span id="completionYesterdayRate">0%</span></p>
+            </div>
+        </div>
+        <div class="column today" id="todayColumn">
+            <h2>Today</h2>
+            <div class="date" id="todayDate"></div>
+            <div class="input-container">
+                <input type="text" id="todayTaskInput" placeholder="Enter a new task...">
+                <button id="addTodayTaskBtn">+</button>
+            </div>
+            <ul id="todayTaskList"></ul>
+            <div class="stats">
+                <p>Total Tasks: <span id="totalTodayTasks">0</span></p>
+                <p>Completed Tasks: <span id="completedTodayTasks">0</span></p>
+                <p><strong>Completion Rate:</strong> <span id="completionTodayRate">0%</span></p>
+            </div>
+        </div>
+        <div class="column" id="tomorrowColumn">
+            <h2>Tomorrow</h2>
+            <div class="date" id="tomorrowDate"></div>
+            <div class="input-container">
+                <input type="text" id="tomorrowTaskInput" placeholder="Enter a new task...">
+                <button id="addTomorrowTaskBtn">+</button>
+            </div>
+            <ul id="tomorrowTaskList"></ul>
+            <div class="stats">
+                <p>Total Tasks: <span id="totalTomorrowTasks">0</span></p>
+                <p>Completed Tasks: <span id="completedTomorrowTasks">0</span></p>
+                <p><strong>Completion Rate:</strong> <span id="completionTomorrowRate">0%</span></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
