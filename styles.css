@@ -1,0 +1,132 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background: linear-gradient(to right, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%); /* 선형 그라디언트 배경 */
+    color: #fff; /* 텍스트 색상 변경 */
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    border-radius: 0 0 20px 20px; /* 헤더 하단의 모서리를 둥글게 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
+    font-size: 20px; /* 텍스트 크기 확대 */
+    font-weight: bold; /* 텍스트 굵게 */
+    border-bottom: 3px solid #f8d0cb; /* 하단 테두리 추가 */
+}
+#back-button {
+    border: none;
+    background-color: #4CAF50; /* 그린 계열의 배경색 */
+    color: white;
+    padding: 10px;
+    border-radius: 50%; /* 버튼을 완전히 동그랗게 만듦 */
+    cursor: pointer;
+    position: absolute; /* 상대적인 위치 설정 */
+    left: 10px; /* 왼쪽에서 10px의 위치 */
+    top: 10px; /* 상단에서 10px의 위치 */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* 그림자 효과 추가 */
+}
+
+#back-button:hover {
+    background-color: #367c39; /* 호버 시 색상 변경 */
+}
+
+.timetable {
+    margin: 20px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate; /* 각 셀 사이 간격을 주기 위해 */
+    border-spacing: 4px; /* 셀 사이의 간격 */
+}
+
+th, td {
+    border-radius: 10px; /* 셀 모서리 둥글게 */
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* 셀에 그림자 효과 추가 */
+}
+
+th {
+    background-color: #ffdbdb; /* 부드러운 붉은색 계열로 헤더 색상 변경 */
+    color: #333;
+    font-size: 16px;
+}
+
+td {
+    color: #666;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+}
+footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 20px 0;
+    background: #ffcccc; /* 푸터에도 헤더와 같은 색상 적용 */
+    color: #333;
+    width: 100%;
+    border-radius: 20px 20px 0 0; /* 푸터 상단의 모서리를 둥글게 */
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive; /* 귀엽고 친근감 있는 폰트로 변경 */
+    font-size: 18px; /* 폰트 크기 증가 */
+    font-weight: bold; /* 텍스트 굵게 */
+    text-shadow: 1px 1px 2px pink; /* 텍스트에 그림자 효과 추가 */
+}
+
+.button-container {
+    margin: 20px;
+    text-align: center;
+}
+
+#refresh-timetable {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #ff8888; /* 밝은 붉은색 */
+    border: none;
+    border-radius: 20px; /* 버튼 모서리 둥글게 */
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+#refresh-timetable:hover {
+    background-color: #ff5555; /* 호버 색상 변경 */
+}
+
+
+.subject-1 {
+    background-color: #ffadad; /* 붉은색 계열 */
+}
+
+.subject-2 {
+    background-color: #ffd6a5; /* 주황색 계열 */
+}
+
+.subject-3 {
+    background-color: #fdffb6; /* 연한 노랑색 계열 */
+}
+
+.subject-4 {
+    background-color: #caffbf; /* 연한 초록색 계열 */
+}
+
+.subject-5 {
+    background-color: #9bf6ff; /* 하늘색 계열 */
+}
+
+.subject-6 {
+    background-color: #a0c4ff; /* 파란색 계열 */
+}
+
+.subject-free {
+    background-color: #fffffc; /* 거의 흰색 */
+}
