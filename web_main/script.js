@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     document.getElementById('timetableBtn').addEventListener('click', () => {
-        window.location.href = '../web_time/index.html';
+        window.location.href = '../web_time/Timetable.html';
     });
 
     document.getElementById('todolistBtn').addEventListener('click', () => {
@@ -12,6 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     document.getElementById('mapBtn').addEventListener('click', () => {
-        window.location.href = 'm../web_map/index.html';
+        window.location.href = '../web_map/map2.html';
     });
 });
